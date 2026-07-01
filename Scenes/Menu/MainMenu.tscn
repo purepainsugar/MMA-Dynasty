@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://d315teeax8cad"]
+
+[node name="MainMenu" type="Control" unique_id=1056089511]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="." unique_id=1958978244]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12408299, 0.124082975, 0.124082945, 1)
+
+[node name="Logo" type="Label" parent="." unique_id=1119303241]
+layout_mode = 0
+offset_left = 1065.0
+offset_top = 499.0
+offset_right = 1897.1738
+offset_bottom = 664.0
+text = "MMA DYNASTY"
+
+[node name="Navigation" type="VBoxContainer" parent="." unique_id=1068539249]
+layout_mode = 0
+offset_left = 1044.0
+offset_top = 583.0
+offset_right = 1246.0
+offset_bottom = 869.1666
+
+[node name="NewGameButton" type="Button" parent="Navigation" unique_id=1729170942]
+layout_mode = 2
+text = "New Game"
+
+[node name="LoadGameButton" type="Button" parent="Navigation" unique_id=1045471134]
+layout_mode = 2
+text = "Load Game"
+
+[node name="SetingsButton" type="Button" parent="Navigation" unique_id=722327027]
+layout_mode = 2
+text = "Settings"
+
+[node name="ExitButton" type="Button" parent="Navigation" unique_id=1289126767]
+layout_mode = 2
+text = "Exit"
+
+[node name="Version" type="Label" parent="." unique_id=758760239]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 19.0
+offset_right = 128.0
+offset_bottom = 42.0
+text = "v0.0.1 Sprint 1"
+
+[node name="Header" type="Panel" parent="." unique_id=772828421]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Footer" type="Panel" parent="." unique_id=1875648564]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ContentArea" type="Panel" parent="." unique_id=1596164732]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
