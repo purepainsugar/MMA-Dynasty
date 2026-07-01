@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://bs1fuvc7sc1ed"]
+
+[ext_resource type="PackedScene" uid="uid://dlxg8y1yoqf5u" path="res://Scenes/UI/UIPanel.tscn" id="1_b3vg7"]
+[ext_resource type="PackedScene" uid="uid://cdj1pg16kqbkc" path="res://Scenes/UI/TopBar.tscn" id="1_n8pl3"]
+[ext_resource type="PackedScene" uid="uid://c3a33wge3alya" path="res://Scenes/UI/BottomNavigation.tscn" id="3_rxei5"]
+
+[node name="Dashboard" type="Control" unique_id=179188285]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackGround" type="ColorRect" parent="." unique_id=1806130005]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14225578, 0.14225581, 0.14225578, 1)
+
+[node name="TopBar" parent="." unique_id=1610431272 instance=ExtResource("1_n8pl3")]
+layout_mode = 0
+
+[node name="MainContent" type="Control" parent="." unique_id=641832817]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(20, 100)
+pivot_offset_ratio = Vector2(20, 120)
+
+[node name="CampverviewPanel" parent="MainContent" unique_id=1178064754 instance=ExtResource("1_b3vg7")]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 246.0
+offset_right = 530.0
+offset_bottom = 496.0
+
+[node name="FeaturedFightersPanel" parent="MainContent" unique_id=753917560 instance=ExtResource("1_b3vg7")]
+layout_mode = 0
+offset_left = 779.0
+offset_top = 248.0
+offset_right = 1179.0
+offset_bottom = 498.0
+
+[node name="UpcomingPanel" parent="MainContent" unique_id=2024997820 instance=ExtResource("1_b3vg7")]
+layout_mode = 0
+offset_left = 1507.0
+offset_top = 235.0
+offset_right = 1907.0
+offset_bottom = 485.0
+
+[node name="NewsPanel" parent="MainContent" unique_id=100796753 instance=ExtResource("1_b3vg7")]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 672.0
+offset_right = 456.0
+offset_bottom = 922.0
+
+[node name="RankingsPanel" parent="MainContent" unique_id=421229359 instance=ExtResource("1_b3vg7")]
+layout_mode = 0
+offset_left = 730.0
+offset_top = 594.0
+offset_right = 1130.0
+offset_bottom = 844.0
+
+[node name="FinancePanel" parent="MainContent" unique_id=2131151596 instance=ExtResource("1_b3vg7")]
+layout_mode = 0
+offset_left = 1397.0
+offset_top = 628.0
+offset_right = 1797.0
+offset_bottom = 878.0
+
+[node name="BottomNavigation" parent="." unique_id=508850874 instance=ExtResource("3_rxei5")]
+layout_mode = 0
+offset_top = 1037.0
+offset_bottom = 1077.0

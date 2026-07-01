@@ -1,14 +1,30 @@
 [gd_scene format=3 uid="uid://dlxg8y1yoqf5u"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a5pbh"]
+bg_color = Color(0.05490196, 0.05490196, 0.05490196, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.16470589, 0.16470589, 1)
+
 [node name="UIPanel" type="Panel" unique_id=1178064754]
 custom_minimum_size = Vector2(400, 250)
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 774.0
+offset_top = 550.0
+offset_right = 1174.0
+offset_bottom = 800.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a5pbh")
 
 [node name="TitleLabel" type="Label" parent="." unique_id=1300521274]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = 12.0
+offset_top = 8.0
+offset_right = -12.0
+offset_bottom = 32.0
+grow_horizontal = 2
 text = "Panel Text"
 horizontal_alignment = 1
 
@@ -19,3 +35,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 12

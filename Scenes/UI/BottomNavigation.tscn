@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://c3a33wge3alya"]
+
+[node name="BottomNavigation" type="Panel" unique_id=508850874]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1547540500]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonRow" type="HBoxContainer" parent="Margin" unique_id=659662081]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HomeButton" type="Button" parent="Margin/ButtonRow" unique_id=1667941639]
+layout_mode = 2
+text = "Home"
+
+[node name="CampButton" type="Button" parent="Margin/ButtonRow" unique_id=1810378660]
+layout_mode = 2
+text = "Camp"
+
+[node name="FightersButton" type="Button" parent="Margin/ButtonRow" unique_id=1170751252]
+layout_mode = 2
+text = "Fighters"
+
+[node name="ScheduleButton" type="Button" parent="Margin/ButtonRow" unique_id=242746089]
+layout_mode = 2
+text = "Schedule"
+
+[node name="RankingsButton" type="Button" parent="Margin/ButtonRow" unique_id=733424120]
+layout_mode = 2
+text = "Rankings"
+
+[node name="NewsButton" type="Button" parent="Margin/ButtonRow" unique_id=1835305537]
+layout_mode = 2
+text = "News"
+
+[node name="MoreButton" type="Button" parent="Margin/ButtonRow" unique_id=465517487]
+layout_mode = 2
+text = "More"
