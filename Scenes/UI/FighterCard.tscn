@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://p2jr20kefbnm"]
+
+[node name="FighterCard" type="Panel" unique_id=1837188587]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=852109380]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin" unique_id=1041198158]
+layout_mode = 2
+
+[node name="Portrait" type="TextureRect" parent="Margin/HBoxContainer" unique_id=1652038574]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Info" type="VBoxContainer" parent="Margin/HBoxContainer" unique_id=1879554610]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="Margin/HBoxContainer/Info" unique_id=420453249]
+layout_mode = 2
+text = "Michael Wooden"
+
+[node name="Nickname Label" type="Label" parent="Margin/HBoxContainer/Info" unique_id=1865394111]
+layout_mode = 2
+text = "\"The Technician\""
+
+[node name="DivisionLabel" type="Label" parent="Margin/HBoxContainer/Info" unique_id=2038891823]
+layout_mode = 2
+text = "Welterweight #25"
+
+[node name="Record" type="VBoxContainer" parent="Margin/HBoxContainer" unique_id=614783840]
+layout_mode = 2
+
+[node name="RecordLabel" type="Label" parent="Margin/HBoxContainer/Record" unique_id=417498522]
+layout_mode = 2
+text = "10-3"
+
+[node name="NextFightLabel" type="Label" parent="Margin/HBoxContainer/Record" unique_id=1819775802]
+layout_mode = 2
+text = "vs Johnny Overwood"
