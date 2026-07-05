@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://co8j3y8hotuhv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gf7e2"]
+bg_color = Color(0.16470589, 0.16470589, 0.16470589, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_detail = 1
+
+[node name="StatCard" type="Panel" unique_id=221990411]
+custom_minimum_size = Vector2(160, 90)
+offset_top = -2.0
+offset_right = 160.0
+offset_bottom = 88.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gf7e2")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1426465537]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="VBoxContainer" parent="Margin" unique_id=513195875]
+layout_mode = 2
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="Margin/Stack" unique_id=630348692]
+layout_mode = 2
+text = "CAMP REP"
+horizontal_alignment = 1
+
+[node name="ValueLabel" type="Label" parent="Margin/Stack" unique_id=1117903376]
+layout_mode = 2
+text = "82"
+horizontal_alignment = 1
