@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bhmn50uy3pemy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gf7e2"]
+bg_color = Color(0.05490196, 0.05490196, 0.05490196, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_detail = 1
+
+[node name="NewsCard" type="Panel" unique_id=43714418]
+custom_minimum_size = Vector2(360, 180)
+offset_right = 360.0
+offset_bottom = 180.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gf7e2")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=454455752]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="VBoxContainer" parent="Margin" unique_id=1058812455]
+layout_mode = 2
+
+[node name="CategoryLabel" type="Label" parent="Margin/Stack" unique_id=1013287666]
+layout_mode = 2
+text = "TITLE CHANGE"
+
+[node name="HeadlineLabel" type="Label" parent="Margin/Stack" unique_id=1270179050]
+layout_mode = 2
+text = "Sam Menez captures Summit gold"
+
+[node name="BodyLabel" type="Label" parent="Margin/Stack" unique_id=660056103]
+custom_minimum_size = Vector2(360, 100)
+layout_mode = 2
+text = "SUMMIT 47: Mendez defeated John Melendez by split decision in a five-round championship fight."
+autowrap_mode = 2
+clip_text = true
+
+[node name="DateLabel" type="Label" parent="Margin/Stack" unique_id=1827511207]
+layout_mode = 2
+text = "May 10, 2027"
