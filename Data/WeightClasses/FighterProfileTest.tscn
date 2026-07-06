@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://c6odruedo762f"]
+
+[ext_resource type="Script" uid="uid://duoh3q38jeimn" path="res://Scripts/UI/FighterProfileTest.gd" id="1_7at5k"]
+[ext_resource type="PackedScene" uid="uid://cdj1pg16kqbkc" path="res://Scenes/UI/TopBar.tscn" id="1_i6u56"]
+[ext_resource type="PackedScene" uid="uid://c3a33wge3alya" path="res://Scenes/UI/BottomNavigation.tscn" id="2_3w6vb"]
+[ext_resource type="Resource" uid="uid://6chqxcp3nxxj" path="res://Data/Fighters/WFC/Lightweight/victor_makarov.tres" id="2_7at5k"]
+[ext_resource type="PackedScene" uid="uid://dlxg8y1yoqf5u" path="res://Scenes/UI/UIPanel.tscn" id="3_7at5k"]
+[ext_resource type="PackedScene" uid="uid://p2jr20kefbnm" path="res://Scenes/UI/FighterCard.tscn" id="4_p2h6w"]
+
+[node name="FighterProfileTest" type="Control" unique_id=591807452]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7at5k")
+fighter_data = ExtResource("2_7at5k")
+
+[node name="BackGround" type="ColorRect" parent="." unique_id=809289525]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1254902, 0.1254902, 0.1254902, 1)
+
+[node name="TopBar" parent="." unique_id=1610431272 instance=ExtResource("1_i6u56")]
+custom_minimum_size = Vector2(1920, 56)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 48.0
+
+[node name="BottomNavigation" parent="." unique_id=508850874 instance=ExtResource("2_3w6vb")]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Content" type="MarginContainer" parent="." unique_id=509538930]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = -40
+theme_override_constants/margin_bottom = -88
+
+[node name="MainColumn" type="VBoxContainer" parent="Content" unique_id=1668581276]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ProfileDetailPanel" parent="Content/MainColumn" unique_id=1178064754 instance=ExtResource("3_7at5k")]
+layout_mode = 2
+
+[node name="TitleLabel" parent="Content/MainColumn/ProfileDetailPanel" index="0" unique_id=1300521274]
+text = "PROFILE DETAILS"
+
+[node name="DetailsStack" type="VBoxContainer" parent="Content/MainColumn/ProfileDetailPanel/Content" parent_id_path=PackedInt32Array(1178064754, 2070081730) index="0" unique_id=1422962786]
+layout_mode = 2
+
+[node name="AgeCountryLabel" type="Label" parent="Content/MainColumn/ProfileDetailPanel/Content/DetailsStack" unique_id=1829270840]
+layout_mode = 2
+text = "AgeCountryLabel: Age / Country"
+
+[node name="StyleLabel" type="Label" parent="Content/MainColumn/ProfileDetailPanel/Content/DetailsStack" unique_id=1142883785]
+layout_mode = 2
+text = "StyleLabel: Style"
+
+[node name="RoleLabel" type="Label" parent="Content/MainColumn/ProfileDetailPanel/Content/DetailsStack" unique_id=1513688529]
+layout_mode = 2
+text = "RoleLabel: Role"
+
+[node name="StoryLabel" type="Label" parent="Content/MainColumn/ProfileDetailPanel/Content/DetailsStack" unique_id=1047096093]
+layout_mode = 2
+text = "StoryLabel: Story"
+
+[node name="FighterCard" parent="Content/MainColumn" unique_id=1837188587 instance=ExtResource("4_p2h6w")]
+custom_minimum_size = Vector2(600, 180)
+layout_mode = 2
+
+[editable path="Content/MainColumn/ProfileDetailPanel"]
