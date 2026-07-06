@@ -144,16 +144,16 @@ They should create:
 
 ---
 
-## 8. Rising Prospect
+## 8. Late-career contender / final title push
 
 ### John Mendez
 - Role: Rising contender / potential champion
-- Age: Older prospect / prime age TBD
+- Age: 33
 - Country: Mexico
 - Style: Striker
 - Look: Older Mexican fighter
 - Record: 19-10
-- Ranking: 3
+- Ranking: 13
 - Personality Hook: Late-career breakout possibility
 - Division Purpose: Fan-friendly future contender
 - Story Use: Possible emotional title chase
@@ -169,6 +169,20 @@ They should create:
 - Style: Elite Tech/Grappling
 - Look: Asian, White,wide eyed
 - Record: 5-0
+- Ranking: unranked
+- Personality Hook: Untested hype
+- Division Purpose: Developmental star
+- Story Use: Can become a champion or get exposed
+
+
+## Blue Chip Prospect
+### Luka September
+- Role: Undefeated prospect
+- Age: 23
+- Country: USA
+- Style: Flashy Striker/Grappler
+- Look: White/latino, skinny, black wavy hair
+- Record: 7-1
 - Ranking: unranked
 - Personality Hook: Untested hype
 - Division Purpose: Developmental star
@@ -194,13 +208,13 @@ They should create:
 
 ## 11. Declining Former Name
 
-### 
+### TJ Moore
 - Role: Declining former contender
-- Age: TBD
-- Country: TBD
-- Style: TBD
-- Look: TBD
-- Record: TBD
+- Age: 30
+- Country: USA
+- Style: Sprawl and Brawl
+- Look: Shaved head, thick light brown eyebrows, shaved brwn hair, tattoos
+- Record: 26-8
 - Ranking: Low ranked or unranked
 - Personality Hook: Still has name value, but body is fading
 - Division Purpose: Creates age/decline realism
@@ -210,19 +224,32 @@ They should create:
 
 ## 12. Personality / Easter Egg Fighter
 
-### TBD
+### Shiv St. Samuel
 - Role: Cult fighter / personality fighter
-- Age: TBD
-- Country: TBD
-- Style: TBD
-- Look: TBD
-- Record: TBD
-- Ranking: TBD
+- Age: 30
+- Country: RUSSIA
+- Style: WRESTLER/G&P
+- Look: Ryu/Kratos had a manly baby
+- Record: 20-2
+- Ranking: 5
 - Personality Hook: Memorable oddball
 - Division Purpose: Makes the division feel less generic
 - Story Use: Fan favorite, meme fighter, upset machine
 
 ---
+# Rankings
+
+Gabriel Costa Ranking: #2
+Eddie Crowe Ranking: #3
+Fred Murr Ranking: #4
+Shiv St. Samuel Ranking: #5
+Drake Thompson Ranking: #6
+John Mendez Ranking: #7
+TJ Moore Ranking: #10
+Mike Doolittle Ranking: #12
+John Sherane Role: Undefeated Prospect
+Luka September Role: Blue-Chip Prospect
+Andre Petrov Role: Dangerous Unranked Fighter
 
 # Notes
 
