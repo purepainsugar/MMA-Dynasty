@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://cjr8ct20yeir2"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_s3tk3"]
+
+[resource]
+script = ExtResource("1_s3tk3")
+fighter_id = "viktor_makarov"
+first_name = "Viktor"
+last_name = "Makarov"
+nickname = "Machine Gun"
+age = 30
+country = "Russia"
+role = "Current WFC Lightweight Champion"
+is_champion = true
+wins = 22
+style = "Pressure Wrestling / Power Grappling"
+archetype = "Dominant Champion"
+overall = 92
+potential = 94
+look_description = "Bald"
+personality_hook = "Intimidating"
+story_use = "Final boss of the first lightweight era"
+portrait_seed = "viktor_makarov_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"
