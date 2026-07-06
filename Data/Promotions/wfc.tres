@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PromotionData" format=3 uid="uid://c3vv4x118eloi"]
+
+[ext_resource type="Script" uid="uid://b2il05jeg37y3" path="res://Scripts/Data/PromotionData.gd" id="1_sa1km"]
+
+[resource]
+script = ExtResource("1_sa1km")
+promotion_id = "wfc"
+name = "World Fighting Championship"
+abbreviation = "WFC"
+region = "Global"
+prestige = 95
+logo_seed = "wfc_001"
+description = "The largest mixed martial arts promotion in the world. WFC is the peak of the sport, home to the deepest divisions, the most famous champions, and the biggest fights."
+metadata/_custom_type_script = "uid://b2il05jeg37y3"

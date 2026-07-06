@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="WeightClassData" format=3 uid="uid://citx0qjmdcftu"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_hewt7"]
+[ext_resource type="Resource" uid="uid://6chqxcp3nxxj" path="res://Data/Fighters/WFC/Lightweight/victor_makarov.tres" id="1_oosv3"]
+[ext_resource type="Script" uid="uid://dmgnr3csqpj8t" path="res://Scripts/Data/WeightClassData.gd" id="2_4u4eo"]
+[ext_resource type="Resource" uid="uid://c3vv4x118eloi" path="res://Data/Promotions/wfc.tres" id="2_hrlbo"]
+[ext_resource type="Resource" uid="uid://ic32bjwlldwr" path="res://Data/Fighters/WFC/Lightweight/sam_mendoza.tres" id="4_184sy"]
+[ext_resource type="Resource" uid="uid://va18rtkr3tvo" path="res://Data/Fighters/WFC/Lightweight/gabriel_costa.tres" id="5_2akjo"]
+[ext_resource type="Resource" uid="uid://cdx1o5srnycke" path="res://Data/Fighters/WFC/Lightweight/eddie_crowe.tres" id="6_1lf4r"]
+[ext_resource type="Resource" uid="uid://c0bvvuokgog43" path="res://Data/Fighters/WFC/Lightweight/fred_murr.tres" id="7_gw66m"]
+[ext_resource type="Resource" uid="uid://2dmk6wnebrn5" path="res://Data/Fighters/WFC/Lightweight/shiv_st_samuel.tres" id="8_38o5d"]
+[ext_resource type="Resource" uid="uid://dkpq0guwh4ix7" path="res://Data/Fighters/WFC/Lightweight/drake_thompson.tres" id="9_f1l2j"]
+[ext_resource type="Resource" uid="uid://ddttyrm158i20" path="res://Data/Fighters/WFC/Lightweight/john_mendez.tres" id="10_ff1bv"]
+[ext_resource type="Resource" uid="uid://dvrcoq1cd7o41" path="res://Data/Fighters/WFC/Lightweight/tj_moore.tres" id="11_qloyk"]
+[ext_resource type="Resource" uid="uid://dtcntl7mk5706" path="res://Data/Fighters/WFC/Lightweight/mike_doolittle.tres" id="12_or24b"]
+[ext_resource type="Resource" uid="uid://8hxdx3yeqcnv" path="res://Data/Fighters/WFC/Lightweight/andre_petrov.tres" id="14_f3fck"]
+[ext_resource type="Resource" uid="uid://0btgerg8frao" path="res://Data/Fighters/WFC/Lightweight/john_sherane.tres" id="15_sakqw"]
+[ext_resource type="Resource" uid="uid://bt1gfff34h4rv" path="res://Data/Fighters/WFC/Lightweight/luka_september.tres" id="16_lw6ej"]
+
+[resource]
+script = ExtResource("2_4u4eo")
+weight_class_id = "wfc_lightweight"
+promotion = ExtResource("2_hrlbo")
+name = "Lightweight"
+abbreviation = "LW"
+champion = ExtResource("1_oosv3")
+ranked_fighters = Array[ExtResource("1_hewt7")]([ExtResource("4_184sy"), ExtResource("5_2akjo"), ExtResource("6_1lf4r"), ExtResource("7_gw66m"), ExtResource("8_38o5d"), ExtResource("9_f1l2j"), ExtResource("10_ff1bv"), null, null, ExtResource("11_qloyk"), null, ExtResource("12_or24b")])
+unranked_fighters = Array[ExtResource("1_hewt7")]([ExtResource("14_f3fck"), ExtResource("15_sakqw"), ExtResource("16_lw6ej")])
+metadata/_custom_type_script = "uid://dmgnr3csqpj8t"
