@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://p2jr20kefbnm"]
 
+[ext_resource type="Script" uid="uid://evvg7vy7ubn2" path="res://Scenes/UI/FighterCard.gd" id="1_h1jjh"]
+[ext_resource type="Resource" uid="uid://ic32bjwlldwr" path="res://Data/Fighters/WFC/Lightweight/sam_mendoza.tres" id="2_1i3ae"]
+
 [node name="FighterCard" type="Panel" unique_id=1837188587]
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_h1jjh")
+fighter_data = ExtResource("2_1i3ae")
 
 [node name="Margin" type="MarginContainer" parent="." unique_id=852109380]
 layout_mode = 0
@@ -23,7 +28,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Michael Wooden"
 
-[node name="Nickname Label" type="Label" parent="Margin/HBoxContainer/Info" unique_id=1865394111]
+[node name="NicknameLabel" type="Label" parent="Margin/HBoxContainer/Info" unique_id=1865394111]
 layout_mode = 2
 text = "\"The Technician\""
 
