@@ -2,7 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://dlxg8y1yoqf5u" path="res://Scenes/UI/UIPanel.tscn" id="1_b3vg7"]
 [ext_resource type="PackedScene" uid="uid://cdj1pg16kqbkc" path="res://Scenes/UI/TopBar.tscn" id="1_n8pl3"]
+[ext_resource type="PackedScene" uid="uid://co8j3y8hotuhv" path="res://Scenes/UI/StatCard.tscn" id="3_3w2xv"]
 [ext_resource type="PackedScene" uid="uid://c3a33wge3alya" path="res://Scenes/UI/BottomNavigation.tscn" id="3_rxei5"]
+[ext_resource type="PackedScene" uid="uid://j4j1r0an5rfh" path="res://Scenes/UI/FighterMiniCard.tscn" id="4_3w2xv"]
+[ext_resource type="PackedScene" uid="uid://bhmn50uy3pemy" path="res://Scenes/UI/NewsCard.tscn" id="5_jn6xl"]
+[ext_resource type="PackedScene" uid="uid://3rxs1ybxfo8m" path="res://Scenes/UI/NewsListItem.tscn" id="6_v85ql"]
 
 [node name="Dashboard" type="Control" unique_id=179188285]
 layout_mode = 3
@@ -34,49 +38,286 @@ grow_vertical = 2
 pivot_offset = Vector2(20, 100)
 pivot_offset_ratio = Vector2(20, 120)
 
-[node name="CampverviewPanel" parent="MainContent" unique_id=1178064754 instance=ExtResource("1_b3vg7")]
+[node name="CampOverviewPanel" parent="MainContent" unique_id=1178064754 instance=ExtResource("1_b3vg7")]
 layout_mode = 0
-offset_left = 130.0
-offset_top = 246.0
-offset_right = 530.0
-offset_bottom = 496.0
+offset_left = 201.0
+offset_top = 259.0
+offset_right = 601.0
+offset_bottom = 509.0
 
-[node name="FeaturedFightersPanel" parent="MainContent" unique_id=753917560 instance=ExtResource("1_b3vg7")]
+[node name="Content2" type="MarginContainer" parent="MainContent/CampOverviewPanel" unique_id=117461522]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StatRow" type="HBoxContainer" parent="MainContent/CampOverviewPanel/Content2" unique_id=1526490845]
+layout_mode = 2
+
+[node name="CampRecordStat" parent="MainContent/CampOverviewPanel/Content2/StatRow" unique_id=221990411 instance=ExtResource("3_3w2xv")]
+layout_mode = 2
+
+[node name="TitleLabel" parent="MainContent/CampOverviewPanel/Content2/StatRow/CampRecordStat/Margin/Stack" parent_id_path=PackedInt32Array(221990411, 513195875) index="0" unique_id=630348692]
+text = "CAMP RECORD"
+
+[node name="ValueLabel" parent="MainContent/CampOverviewPanel/Content2/StatRow/CampRecordStat/Margin/Stack" parent_id_path=PackedInt32Array(221990411, 513195875) index="1" unique_id=1117903376]
+text = "124-37-1"
+
+[node name="WinRateStat" parent="MainContent/CampOverviewPanel/Content2/StatRow" unique_id=1902333770 instance=ExtResource("3_3w2xv")]
+layout_mode = 2
+
+[node name="TitleLabel" parent="MainContent/CampOverviewPanel/Content2/StatRow/WinRateStat/Margin/Stack" parent_id_path=PackedInt32Array(1902333770, 513195875) index="0" unique_id=630348692]
+text = "WIN RATE"
+
+[node name="ValueLabel" parent="MainContent/CampOverviewPanel/Content2/StatRow/WinRateStat/Margin/Stack" parent_id_path=PackedInt32Array(1902333770, 513195875) index="1" unique_id=1117903376]
+text = "76%"
+
+[node name="ActiveFightersStat" parent="MainContent/CampOverviewPanel/Content2/StatRow" unique_id=1754204744 instance=ExtResource("3_3w2xv")]
+layout_mode = 2
+
+[node name="TitleLabel" parent="MainContent/CampOverviewPanel/Content2/StatRow/ActiveFightersStat/Margin/Stack" parent_id_path=PackedInt32Array(1754204744, 513195875) index="0" unique_id=630348692]
+text = "ACTIVE FIGHTERS"
+
+[node name="ValueLabel" parent="MainContent/CampOverviewPanel/Content2/StatRow/ActiveFightersStat/Margin/Stack" parent_id_path=PackedInt32Array(1754204744, 513195875) index="1" unique_id=1117903376]
+text = "12"
+
+[node name="FeaturedFightersPane" parent="MainContent" unique_id=753917560 instance=ExtResource("1_b3vg7")]
+custom_minimum_size = Vector2(600, 300)
 layout_mode = 0
-offset_left = 779.0
+offset_left = 705.0
 offset_top = 248.0
-offset_right = 1179.0
-offset_bottom = 498.0
+offset_right = 1305.0
+offset_bottom = 548.0
 
-[node name="UpcomingPanel" parent="MainContent" unique_id=2024997820 instance=ExtResource("1_b3vg7")]
-layout_mode = 0
-offset_left = 1507.0
-offset_top = 235.0
-offset_right = 1907.0
-offset_bottom = 485.0
+[node name="TitleLabel" parent="MainContent/FeaturedFightersPane" index="0" unique_id=1300521274]
+offset_top = 7.0
+offset_bottom = 31.0
+text = "FEATURED FIGHTERS"
 
-[node name="NewsPanel" parent="MainContent" unique_id=100796753 instance=ExtResource("1_b3vg7")]
-layout_mode = 0
-offset_left = 56.0
-offset_top = 672.0
-offset_right = 456.0
-offset_bottom = 922.0
+[node name="Content" parent="MainContent/FeaturedFightersPane" index="1" unique_id=2070081730]
+offset_transform_position = Vector2(8, 36)
+theme_override_constants/margin_top = 44
+theme_override_constants/margin_right = 12
 
-[node name="RankingsPanel" parent="MainContent" unique_id=421229359 instance=ExtResource("1_b3vg7")]
+[node name="FighterMiniRow" type="HBoxContainer" parent="MainContent/FeaturedFightersPane/Content" index="0" unique_id=1234381]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="FighterMiniCard" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow" unique_id=1695334205 instance=ExtResource("4_3w2xv")]
+custom_minimum_size = Vector2(180, 110)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="FighterMiniCard2" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow" unique_id=939336560 instance=ExtResource("4_3w2xv")]
+custom_minimum_size = Vector2(180, 110)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="NameLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard2/Margin/Row/Info" parent_id_path=PackedInt32Array(939336560, 2147059597) index="0" unique_id=1150078244]
+text = "L. September"
+
+[node name="RoleLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard2/Margin/Row/Info" parent_id_path=PackedInt32Array(939336560, 2147059597) index="1" unique_id=1237750079]
+text = "FO #3 LW"
+
+[node name="RecordLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard2/Margin/Row/Info" parent_id_path=PackedInt32Array(939336560, 2147059597) index="2" unique_id=1555092702]
+text = "9-0"
+
+[node name="NextFightLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard2/Margin/Row/Info" parent_id_path=PackedInt32Array(939336560, 2147059597) index="3" unique_id=769360698]
+text = "vs Insert"
+
+[node name="FighterMiniCard3" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow" unique_id=829622485 instance=ExtResource("4_3w2xv")]
+custom_minimum_size = Vector2(180, 120)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="NameLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard3/Margin/Row/Info" parent_id_path=PackedInt32Array(829622485, 2147059597) index="0" unique_id=1150078244]
+text = "G. Nitram"
+
+[node name="RoleLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard3/Margin/Row/Info" parent_id_path=PackedInt32Array(829622485, 2147059597) index="1" unique_id=1237750079]
+text = "SUMMIT #9"
+
+[node name="RecordLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard3/Margin/Row/Info" parent_id_path=PackedInt32Array(829622485, 2147059597) index="2" unique_id=1555092702]
+text = "18-4"
+
+[node name="NextFightLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard3/Margin/Row/Info" parent_id_path=PackedInt32Array(829622485, 2147059597) index="3" unique_id=769360698]
+text = "vs Bruce"
+
+[node name="UpcomingSchedulePane" parent="MainContent" unique_id=2024997820 instance=ExtResource("1_b3vg7")]
 layout_mode = 0
-offset_left = 730.0
-offset_top = 594.0
-offset_right = 1130.0
-offset_bottom = 844.0
+offset_left = 1420.0
+offset_top = 264.0
+offset_right = 1820.0
+offset_bottom = 514.0
+
+[node name="TitleLabel" parent="MainContent/UpcomingSchedulePane" index="0" unique_id=1300521274]
+text = "UPCOMING SCHEDULE"
+
+[node name="Content" parent="MainContent/UpcomingSchedulePane" index="1" unique_id=2070081730]
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 12
+
+[node name="ScheduleList" type="VBoxContainer" parent="MainContent/UpcomingSchedulePane/Content" index="0" unique_id=1187391949]
+layout_mode = 2
+
+[node name="Schedule Item 1" type="Label" parent="MainContent/UpcomingSchedulePane/Content/ScheduleList" unique_id=107952415]
+layout_mode = 2
+text = "WFC 312- Jun 13"
+clip_text = true
+
+[node name="ScheduleItem2" type="Label" parent="MainContent/UpcomingSchedulePane/Content/ScheduleList" unique_id=146185913]
+layout_mode = 2
+text = "Training Day - Striking - June 14"
+clip_text = true
+
+[node name="ScheduleItem3" type="Label" parent="MainContent/UpcomingSchedulePane/Content/ScheduleList" unique_id=995703155]
+layout_mode = 2
+text = "Training Day -  Balanced - June 21"
+clip_text = true
+
+[node name="ScheduleItem4" type="Label" parent="MainContent/UpcomingSchedulePane/Content/ScheduleList" unique_id=705520874]
+layout_mode = 2
+text = "Scouting Report - June 30"
+clip_text = true
+
+[node name="RecentNewsPanel" parent="MainContent" unique_id=100796753 instance=ExtResource("1_b3vg7")]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 627.0
+offset_right = 598.0
+offset_bottom = 877.0
+
+[node name="TitleLabel" parent="MainContent/RecentNewsPanel" index="0" unique_id=1300521274]
+text = "RECENT NEWS"
+
+[node name="Content" parent="MainContent/RecentNewsPanel" index="1" unique_id=2070081730]
+theme_override_constants/margin_top = 44
+theme_override_constants/margin_right = 12
+
+[node name="NewsList" type="VBoxContainer" parent="MainContent/RecentNewsPanel/Content" index="0" unique_id=1389302410]
+layout_mode = 2
+
+[node name="NewsCard1" parent="MainContent/RecentNewsPanel/Content/NewsList" unique_id=43714418 instance=ExtResource("5_jn6xl")]
+visible = false
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="CategoryLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsCard1/Margin/Stack" parent_id_path=PackedInt32Array(43714418, 1058812455) index="0" unique_id=1013287666]
+text = "TITLE RESULT"
+
+[node name="HeadlineLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsCard1/Margin/Stack" parent_id_path=PackedInt32Array(43714418, 1058812455) index="1" unique_id=1270179050]
+text = "Walker Defends Title"
+
+[node name="BodyLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsCard1/Margin/Stack" parent_id_path=PackedInt32Array(43714418, 1058812455) index="2" unique_id=660056103]
+text = "BUSCH 143: M. Walker (C) wins in five-round decision."
+
+[node name="NewsCard2" parent="MainContent/RecentNewsPanel/Content/NewsList" unique_id=922952782 instance=ExtResource("5_jn6xl")]
+visible = false
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="CategoryLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsCard2/Margin/Stack" parent_id_path=PackedInt32Array(922952782, 1058812455) index="0" unique_id=1013287666]
+text = "SCOUTING"
+
+[node name="HeadlineLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsCard2/Margin/Stack" parent_id_path=PackedInt32Array(922952782, 1058812455) index="1" unique_id=1270179050]
+text = "New Scouting Report"
+
+[node name="BodyLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsCard2/Margin/Stack" parent_id_path=PackedInt32Array(922952782, 1058812455) index="2" unique_id=660056103]
+text = "New Lightweight Prospects added to scouting pool"
+
+[node name="NewsListItem" parent="MainContent/RecentNewsPanel/Content/NewsList" unique_id=1315199694 instance=ExtResource("6_v85ql")]
+layout_mode = 2
+
+[node name="DateLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem/Margin/Row" parent_id_path=PackedInt32Array(1315199694, 1835162070) index="1" unique_id=119093829]
+visible = true
+
+[node name="NewsListItem2" parent="MainContent/RecentNewsPanel/Content/NewsList" unique_id=1557652120 instance=ExtResource("6_v85ql")]
+layout_mode = 2
+
+[node name="HeadlineLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem2/Margin/Row" parent_id_path=PackedInt32Array(1557652120, 1835162070) index="0" unique_id=986113748]
+text = "September beats Sherane by KO"
+
+[node name="DateLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem2/Margin/Row" parent_id_path=PackedInt32Array(1557652120, 1835162070) index="1" unique_id=119093829]
+visible = true
+text = "May 3 2027"
+
+[node name="NewsListItem3" parent="MainContent/RecentNewsPanel/Content/NewsList" unique_id=78232573 instance=ExtResource("6_v85ql")]
+layout_mode = 2
+
+[node name="HeadlineLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem3/Margin/Row" parent_id_path=PackedInt32Array(78232573, 1835162070) index="0" unique_id=986113748]
+text = "Mendez Agrees to Makarov Bout"
+
+[node name="DateLabel" parent="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem3/Margin/Row" parent_id_path=PackedInt32Array(78232573, 1835162070) index="1" unique_id=119093829]
+visible = true
+text = "May 3, 2027"
+
+[node name="RankingSnapshotPanel" parent="MainContent" unique_id=421229359 instance=ExtResource("1_b3vg7")]
+layout_mode = 0
+offset_left = 816.0
+offset_top = 611.0
+offset_right = 1216.0
+offset_bottom = 861.0
+
+[node name="TitleLabel" parent="MainContent/RankingSnapshotPanel" index="0" unique_id=1300521274]
+text = "RANKING SNAPSHOT"
+
+[node name="Content" parent="MainContent/RankingSnapshotPanel" index="1" unique_id=2070081730]
+theme_override_constants/margin_top = 44
+theme_override_constants/margin_right = 12
+
+[node name="RankingList" type="VBoxContainer" parent="MainContent/RankingSnapshotPanel/Content" index="0" unique_id=535717748]
+layout_mode = 2
+
+[node name="RankingItem1" type="Label" parent="MainContent/RankingSnapshotPanel/Content/RankingList" unique_id=201737314]
+layout_mode = 2
+text = "WFC Lightweight     #1 M. Wooden"
+clip_text = true
+
+[node name="RankingItem2" type="Label" parent="MainContent/RankingSnapshotPanel/Content/RankingList" unique_id=670208370]
+layout_mode = 2
+text = "WFC Welterweight    #5 Holloway"
+clip_text = true
+
+[node name="RankingItem3" type="Label" parent="MainContent/RankingSnapshotPanel/Content/RankingList" unique_id=961344745]
+layout_mode = 2
+text = "Summit LHW          #8 Mori"
+clip_text = true
+
+[node name="RankingItem4" type="Label" parent="MainContent/RankingSnapshotPanel/Content/RankingList" unique_id=772662986]
+layout_mode = 2
+text = "P4P World Rank      #12 Walker"
+clip_text = true
 
 [node name="FinancePanel" parent="MainContent" unique_id=2131151596 instance=ExtResource("1_b3vg7")]
 layout_mode = 0
-offset_left = 1397.0
-offset_top = 628.0
-offset_right = 1797.0
-offset_bottom = 878.0
+offset_left = 1432.0
+offset_top = 609.0
+offset_right = 1832.0
+offset_bottom = 859.0
 
 [node name="BottomNavigation" parent="." unique_id=508850874 instance=ExtResource("3_rxei5")]
 layout_mode = 0
 offset_top = 1037.0
 offset_bottom = 1077.0
+
+[editable path="MainContent/CampOverviewPanel/Content2/StatRow/CampRecordStat"]
+[editable path="MainContent/CampOverviewPanel/Content2/StatRow/WinRateStat"]
+[editable path="MainContent/CampOverviewPanel/Content2/StatRow/ActiveFightersStat"]
+[editable path="MainContent/FeaturedFightersPane"]
+[editable path="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard2"]
+[editable path="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard3"]
+[editable path="MainContent/UpcomingSchedulePane"]
+[editable path="MainContent/RecentNewsPanel"]
+[editable path="MainContent/RecentNewsPanel/Content/NewsList/NewsCard1"]
+[editable path="MainContent/RecentNewsPanel/Content/NewsList/NewsCard2"]
+[editable path="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem"]
+[editable path="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem2"]
+[editable path="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem3"]
+[editable path="MainContent/RankingSnapshotPanel"]

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="MMA Dynasty"
-run/main_scene="uid://bhmn50uy3pemy"
+run/main_scene="uid://bs1fuvc7sc1ed"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

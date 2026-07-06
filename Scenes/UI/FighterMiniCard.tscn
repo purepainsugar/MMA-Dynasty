@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://j4j1r0an5rfh"]
+
+[node name="FighterMiniCard" type="Panel" unique_id=1695334205]
+custom_minimum_size = Vector2(190, 120)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1008518366]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Row" type="HBoxContainer" parent="Margin" unique_id=1252024723]
+layout_mode = 2
+
+[node name="Portrait" type="TextureRect" parent="Margin/Row" unique_id=1133602275]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+
+[node name="Info" type="VBoxContainer" parent="Margin/Row" unique_id=2147059597]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="Margin/Row/Info" unique_id=1150078244]
+layout_mode = 2
+text = "M. Wooden"
+autowrap_trim_flags = 0
+
+[node name="RoleLabel" type="Label" parent="Margin/Row/Info" unique_id=1237750079]
+layout_mode = 2
+text = "WFC #15 LW"
+autowrap_trim_flags = 0
+
+[node name="RecordLabel" type="Label" parent="Margin/Row/Info" unique_id=1555092702]
+layout_mode = 2
+text = "7-1"
+autowrap_trim_flags = 0
+
+[node name="NextFightLabel" type="Label" parent="Margin/Row/Info" unique_id=769360698]
+layout_mode = 2
+text = "vs Holloway"
+autowrap_trim_flags = 0

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://3rxs1ybxfo8m"]
+
+[node name="NewsListItem" type="Panel" unique_id=1315199694]
+custom_minimum_size = Vector2(0, 32)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=702827252]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Row" type="HBoxContainer" parent="Margin" unique_id=1835162070]
+layout_mode = 2
+
+[node name="HeadlineLabel" type="Label" parent="Margin/Row" unique_id=986113748]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Walker Defends Title"
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="DateLabel" type="Label" parent="Margin/Row" unique_id=119093829]
+visible = false
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "May 10, 2027"
+horizontal_alignment = 2
