@@ -140,7 +140,7 @@ text = "9-0"
 text = "vs Insert"
 
 [node name="FighterMiniCard3" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow" unique_id=829622485 instance=ExtResource("4_3w2xv")]
-custom_minimum_size = Vector2(180, 120)
+custom_minimum_size = Vector2(180, 110)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
