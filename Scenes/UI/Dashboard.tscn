@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bhmn50uy3pemy" path="res://Scenes/UI/NewsCard.tscn" id="5_jn6xl"]
 [ext_resource type="Resource" uid="uid://ddttyrm158i20" path="res://Data/Fighters/WFC/Lightweight/john_mendez.tres" id="6_gbnjp"]
 [ext_resource type="PackedScene" uid="uid://3rxs1ybxfo8m" path="res://Scenes/UI/NewsListItem.tscn" id="6_v85ql"]
+[ext_resource type="Script" uid="uid://3vq2nqdx0wa3" path="res://Scripts/Data/RankingSnapshotPanel.gd" id="9_50c63"]
+[ext_resource type="Resource" uid="uid://citx0qjmdcftu" path="res://Data/WeightClasses/wfc_lightweight.tres" id="10_lpwa8"]
 
 [node name="Dashboard" type="Control" unique_id=179188285]
 layout_mode = 3
@@ -276,6 +278,8 @@ offset_left = 816.0
 offset_top = 611.0
 offset_right = 1216.0
 offset_bottom = 861.0
+script = ExtResource("9_50c63")
+weight_class_data = ExtResource("10_lpwa8")
 
 [node name="TitleLabel" parent="MainContent/RankingSnapshotPanel" index="0" unique_id=1300521274]
 theme_override_colors/font_color = Color(0.7882353, 0.16470589, 0.16470589, 1)
