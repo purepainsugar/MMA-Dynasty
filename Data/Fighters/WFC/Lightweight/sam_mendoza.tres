@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://ic32bjwlldwr"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_bsrj3"]
+
+[resource]
+script = ExtResource("1_bsrj3")
+fighter_id = "sam_mendoza"
+first_name = "Sam"
+last_name = "Mendoza"
+age = 28
+country = "Mexico"
+role = "Current #1 Contender"
+ranking = 1
+wins = 19
+losses = 2
+style = "Flashy Striker"
+archetype = "Flashy Striker"
+overall = 89
+potential = 90
+look_description = "Average Latino male"
+personality_hook = "Believes he is the uncrowned champion"
+story_use = "First major title fight candidate"
+portrait_seed = "sam_mendoza_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://dtcntl7mk5706"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_8nhtt"]
+
+[resource]
+script = ExtResource("1_8nhtt")
+fighter_id = "mike_doolittle"
+first_name = "Mike"
+last_name = "Doolittle"
+age = 32
+country = "USA"
+role = "Ranked veteran gatekeeper"
+ranking = 12
+wins = 35
+losses = 16
+style = "All-Around"
+archetype = "All-Around Veteran Wrestler"
+overall = 78
+potential = 78
+look_description = "mustache, clean brown hair, cop type"
+personality_hook = "Confident, swaggering, shady veteran"
+story_use = "Prospect test / veteran spoiler"
+portrait_seed = "mike_doolittle_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

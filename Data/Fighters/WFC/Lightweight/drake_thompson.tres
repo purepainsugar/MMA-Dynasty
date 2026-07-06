@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://dkpq0guwh4ix7"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_u1788"]
+
+[resource]
+script = ExtResource("1_u1788")
+fighter_id = "drake_thompson"
+first_name = "Drake"
+last_name = "Thompson"
+age = 32
+country = "USA"
+role = "Ranked veteran decision fighter"
+ranking = 6
+wins = 21
+losses = 6
+style = "Grappler"
+archetype = "Decision Grappler"
+overall = 83
+potential = 83
+look_description = "Josh Thomson-inspired veteran look"
+personality_hook = "Slow starter, momentum fighter"
+story_use = "Can derail exciting fighters with boring wins"
+portrait_seed = "drake_thompson_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

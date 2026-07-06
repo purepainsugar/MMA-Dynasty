@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://ddttyrm158i20"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_e7idp"]
+
+[resource]
+script = ExtResource("1_e7idp")
+fighter_id = "drake_thompson"
+first_name = "John"
+last_name = "Mendez"
+age = 33
+country = "USA"
+role = "Late-career contender / final title push"
+ranking = 7
+wins = 21
+losses = 6
+style = "Striker"
+archetype = "Technical Striker"
+overall = 81
+potential = 83
+look_description = "Older Mexican fighter"
+personality_hook = "Late-career breakout possibility"
+story_use = "Possible emotional title chase"
+portrait_seed = "john_mendez_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://va18rtkr3tvo"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_bsrj3"]
+
+[resource]
+script = ExtResource("1_bsrj3")
+fighter_id = "gabriel_costa"
+first_name = "Gabriel"
+last_name = "Costa"
+age = 31
+country = "Mexico"
+role = "Current #1 Contender"
+ranking = 2
+wins = 25
+losses = 6
+style = "BJJ / Striking"
+archetype = "All-Around Veteran"
+overall = 88
+potential = 88
+look_description = "Older Paulo Costa-inspired look"
+personality_hook = "Lost the belt but still dangerous"
+story_use = "Possible rematch with Makarov"
+portrait_seed = "gabriel_costa_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

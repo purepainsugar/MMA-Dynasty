@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://0btgerg8frao"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_u6rgx"]
+
+[resource]
+script = ExtResource("1_u6rgx")
+fighter_id = "drake_thompson"
+first_name = "John"
+last_name = "Sherane"
+country = "USA"
+role = "Undefeated prospect"
+wins = 5
+style = "Elite technical grappling"
+archetype = "Elite Technician"
+overall = 77
+potential = 92
+look_description = "Asian and white, wide-eyed, black hair"
+personality_hook = "Untested hype"
+story_use = "CCan become a champion or get exposed"
+portrait_seed = "john_sherane_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

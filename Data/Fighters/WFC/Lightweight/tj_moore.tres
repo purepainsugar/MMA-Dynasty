@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://dvrcoq1cd7o41"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_rjcxs"]
+
+[resource]
+script = ExtResource("1_rjcxs")
+fighter_id = "tj_moore"
+first_name = "TJ"
+last_name = "Moore"
+age = 29
+country = "USA"
+role = "Declining former contender"
+ranking = 10
+wins = 26
+losses = 8
+style = "Sprawl and Brawl"
+archetype = "Sprawl-and-Brawler"
+overall = 80
+potential = 80
+look_description = "Shaved head, thick light brown eyebrows, brown hair, tattoos"
+personality_hook = "Still has name value, but body is fading"
+story_use = "gate-keeper / somewhat contender"
+portrait_seed = "tj_moore_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

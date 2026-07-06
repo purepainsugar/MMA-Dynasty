@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://cjr8ct20yeir2"]
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://6chqxcp3nxxj"]
 
-[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_s3tk3"]
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_n4gk4"]
 
 [resource]
-script = ExtResource("1_s3tk3")
+script = ExtResource("1_n4gk4")
 fighter_id = "viktor_makarov"
 first_name = "Viktor"
 last_name = "Makarov"

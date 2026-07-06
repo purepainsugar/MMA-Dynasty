@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://8hxdx3yeqcnv"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_y5i46"]
+
+[resource]
+script = ExtResource("1_y5i46")
+fighter_id = "andre_petrov"
+first_name = "Andre"
+last_name = "Petrov"
+age = 27
+country = "Ukraine"
+role = "Dangerous unranked riser"
+wins = 9
+style = "Grapple-heavy pressure fighter"
+archetype = "Elite Spoiler"
+overall = 82
+potential = 88
+look_description = "Bald, clean cut, ripped, buzzed white hair"
+personality_hook = "Better than his ranking"
+story_use = "First example that rankings do not tell the whole story"
+portrait_seed = "andre_petrov_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

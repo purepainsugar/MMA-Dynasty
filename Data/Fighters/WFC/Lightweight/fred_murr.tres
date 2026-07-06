@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://c0bvvuokgog43"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_ieyoo"]
+
+[resource]
+script = ExtResource("1_ieyoo")
+fighter_id = "fred_murr"
+first_name = "Fred"
+last_name = "Murr"
+age = 23
+country = "USA"
+role = "Ranked knockout threat"
+ranking = 3
+wins = 13
+losses = 2
+style = "Grappler / submission specialist"
+archetype = "Submission Specialist"
+overall = 75
+potential = 87
+look_description = "Sly, cheesy British grappler"
+personality_hook = "Quiet but terrifying on the mat"
+story_use = "Tests whether fighters are well-rounded"
+portrait_seed = "fred_murr_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

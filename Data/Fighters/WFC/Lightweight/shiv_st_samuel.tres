@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://2dmk6wnebrn5"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_ro5ic"]
+
+[resource]
+script = ExtResource("1_ro5ic")
+fighter_id = "shiv_st_samuel"
+first_name = "Shiv"
+last_name = "St. Samuel"
+age = 31
+country = "Russia"
+role = "Cult fighter / personality fighter"
+ranking = 5
+wins = 20
+losses = 2
+style = "Wrestling / ground-and-pound"
+archetype = "Ground-and-Pound Wrestler"
+overall = 85
+potential = 90
+look_description = "Ryu and Kratos had a manly baby"
+personality_hook = "Russian Icon"
+story_use = "Fan favorite, meme fighter, upset machine"
+portrait_seed = "shiv_st_samuel_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

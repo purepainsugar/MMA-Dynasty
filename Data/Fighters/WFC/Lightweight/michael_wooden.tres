@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://cjr8ct20yeir2"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_afx1x"]
+
+[resource]
+script = ExtResource("1_afx1x")
+fighter_id = "michael_wooden"
+first_name = "Michael"
+last_name = "Wooden"
+nickname = "The Technichian"
+country = "USA"
+role = "WFA Unranked Prospect"
+ranking = 21
+wins = 6
+losses = 1
+style = "Grapple-heavy pressure fighter"
+archetype = "Blue-Chip Prospect"
+overall = 68
+potential = 88
+look_description = "Wavy Brown Hair"
+personality_hook = "Confident, Hopeful, Determined"
+story_use = "WSElINSert, PRospect"
+portrait_seed = "michael_wooden_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"

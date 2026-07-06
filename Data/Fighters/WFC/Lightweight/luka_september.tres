@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://bt1gfff34h4rv"]
+
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_n2byc"]
+
+[resource]
+script = ExtResource("1_n2byc")
+fighter_id = "luka_september"
+first_name = "Luka"
+last_name = "September"
+age = 22
+country = "USA"
+role = "Blue-chip prospect"
+wins = 7
+losses = 1
+style = "Flashy striker / grappler"
+archetype = "Blue-Chip Prospect"
+stance = "Southpaw"
+overall = 75
+potential = 90
+look_description = "White/Latino, skinny, black wavy hair"
+personality_hook = "Early loss, reinvented himself, now on a streak"
+story_use = "Can become a champion or get exposed"
+portrait_seed = "luka_september_001"
+metadata/_custom_type_script = "uid://bljbf0acv4kwm"
