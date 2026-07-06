@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://j4j1r0an5rfh"]
 
+[ext_resource type="Script" uid="uid://disatlxtautcv" path="res://Scenes/UI/FighterMiniCard.gd" id="1_3w6ba"]
+[ext_resource type="Resource" uid="uid://ic32bjwlldwr" path="res://Data/Fighters/WFC/Lightweight/sam_mendoza.tres" id="2_ktukk"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0h781"]
 bg_color = Color(0.078431375, 0.078431375, 0.078431375, 1)
 border_width_left = 1
@@ -14,6 +17,8 @@ custom_minimum_size = Vector2(190, 120)
 offset_right = 190.0
 offset_bottom = 120.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_0h781")
+script = ExtResource("1_3w6ba")
+fighter_data = ExtResource("2_ktukk")
 
 [node name="Margin" type="MarginContainer" parent="." unique_id=1008518366]
 layout_mode = 0

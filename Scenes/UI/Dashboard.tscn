@@ -5,7 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://co8j3y8hotuhv" path="res://Scenes/UI/StatCard.tscn" id="3_3w2xv"]
 [ext_resource type="PackedScene" uid="uid://c3a33wge3alya" path="res://Scenes/UI/BottomNavigation.tscn" id="3_rxei5"]
 [ext_resource type="PackedScene" uid="uid://j4j1r0an5rfh" path="res://Scenes/UI/FighterMiniCard.tscn" id="4_3w2xv"]
+[ext_resource type="Resource" uid="uid://dtcntl7mk5706" path="res://Data/Fighters/WFC/Lightweight/mike_doolittle.tres" id="5_7yo7j"]
 [ext_resource type="PackedScene" uid="uid://bhmn50uy3pemy" path="res://Scenes/UI/NewsCard.tscn" id="5_jn6xl"]
+[ext_resource type="Resource" uid="uid://ddttyrm158i20" path="res://Data/Fighters/WFC/Lightweight/john_mendez.tres" id="6_gbnjp"]
 [ext_resource type="PackedScene" uid="uid://3rxs1ybxfo8m" path="res://Scenes/UI/NewsListItem.tscn" id="6_v85ql"]
 
 [node name="Dashboard" type="Control" unique_id=179188285]
@@ -123,6 +125,7 @@ custom_minimum_size = Vector2(180, 110)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
+fighter_data = ExtResource("5_7yo7j")
 
 [node name="NameLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard2/Margin/Row/Info" parent_id_path=PackedInt32Array(939336560, 2147059597) index="0" unique_id=1150078244]
 text = "L. September"
@@ -141,6 +144,7 @@ custom_minimum_size = Vector2(180, 120)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
+fighter_data = ExtResource("6_gbnjp")
 
 [node name="NameLabel" parent="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard3/Margin/Row/Info" parent_id_path=PackedInt32Array(829622485, 2147059597) index="0" unique_id=1150078244]
 text = "G. Nitram"
@@ -356,6 +360,7 @@ grow_vertical = 0
 [editable path="MainContent/CampOverviewPanel/Content2/StatRow/WinRateStat"]
 [editable path="MainContent/CampOverviewPanel/Content2/StatRow/ActiveFightersStat"]
 [editable path="MainContent/FeaturedFightersPane"]
+[editable path="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard"]
 [editable path="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard2"]
 [editable path="MainContent/FeaturedFightersPane/Content/FighterMiniRow/FighterMiniCard3"]
 [editable path="MainContent/UpcomingSchedulePane"]

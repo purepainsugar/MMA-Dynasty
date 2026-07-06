@@ -7,6 +7,7 @@ script = ExtResource("1_ro5ic")
 fighter_id = "shiv_st_samuel"
 first_name = "Shiv"
 last_name = "St. Samuel"
+nickname = "Savior"
 age = 31
 country = "Russia"
 role = "Cult fighter / personality fighter"

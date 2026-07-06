@@ -7,6 +7,7 @@ script = ExtResource("1_bsrj3")
 fighter_id = "sam_mendoza"
 first_name = "Sam"
 last_name = "Mendoza"
+nickname = "No-Mo"
 age = 28
 country = "Mexico"
 role = "Current #1 Contender"

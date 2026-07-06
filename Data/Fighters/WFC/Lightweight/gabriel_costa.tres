@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://va18rtkr3tvo"]
 
-[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_bsrj3"]
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_bouus"]
 
 [resource]
-script = ExtResource("1_bsrj3")
+script = ExtResource("1_bouus")
 fighter_id = "gabriel_costa"
 first_name = "Gabriel"
 last_name = "Costa"
+nickname = "E"
 age = 31
 country = "Mexico"
 role = "Current #1 Contender"

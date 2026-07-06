@@ -7,6 +7,7 @@ script = ExtResource("1_e7idp")
 fighter_id = "drake_thompson"
 first_name = "John"
 last_name = "Mendez"
+nickname = "\"The General\""
 age = 33
 country = "USA"
 role = "Late-career contender / final title push"

@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://cdx1o5srnycke"]
 
-[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_ss4fb"]
+[ext_resource type="Script" uid="uid://bljbf0acv4kwm" path="res://Scripts/Data/FighterData.gd" id="1_ieyoo"]
 
 [resource]
-script = ExtResource("1_ss4fb")
+script = ExtResource("1_ieyoo")
 fighter_id = "eddie_crowe"
 first_name = "Eddie"
 last_name = "Crowe"
 age = 26
 country = "USA"
 role = "Ranked knockout threat"
-ranking = 3
+ranking = 8
 wins = 14
 losses = 2
 style = "Striker / power puncher"
