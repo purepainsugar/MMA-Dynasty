@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://co8j3y8hotuhv"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gf7e2"]
-bg_color = Color(0.16470589, 0.16470589, 0.16470589, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p867g"]
+bg_color = Color(0.078431375, 0.078431375, 0.078431375, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
-corner_detail = 1
+border_color = Color(0.2901961, 0.2901961, 0.2901961, 1)
 
 [node name="StatCard" type="Panel" unique_id=221990411]
 custom_minimum_size = Vector2(160, 90)
 offset_top = -2.0
 offset_right = 160.0
 offset_bottom = 88.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_gf7e2")
+theme_override_styles/panel = SubResource("StyleBoxFlat_p867g")
 
 [node name="Margin" type="MarginContainer" parent="." unique_id=1426465537]
 layout_mode = 1
@@ -29,10 +29,14 @@ alignment = 1
 
 [node name="TitleLabel" type="Label" parent="Margin/Stack" unique_id=630348692]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.9019608, 0.9019608, 0.9019608, 1)
+theme_override_font_sizes/font_size = 14
 text = "CAMP REP"
 horizontal_alignment = 1
 
 [node name="ValueLabel" type="Label" parent="Margin/Stack" unique_id=1117903376]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.9019608, 0.9019608, 0.9019608, 1)
+theme_override_font_sizes/font_size = 16
 text = "82"
 horizontal_alignment = 1

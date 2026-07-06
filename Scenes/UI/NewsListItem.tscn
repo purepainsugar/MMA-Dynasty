@@ -1,9 +1,18 @@
 [gd_scene format=3 uid="uid://3rxs1ybxfo8m"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jxwda"]
+bg_color = Color(0.078431375, 0.078431375, 0.078431375, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.12156863, 0.12156863, 0.12156863, 1)
+
 [node name="NewsListItem" type="Panel" unique_id=1315199694]
 custom_minimum_size = Vector2(0, 32)
 offset_right = 40.0
 offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jxwda")
 
 [node name="Margin" type="MarginContainer" parent="." unique_id=702827252]
 layout_mode = 1
@@ -24,6 +33,8 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.9019608, 0.9019608, 0.9019608, 1)
+theme_override_font_sizes/font_size = 14
 text = "Walker Defends Title"
 clip_text = true
 text_overrun_behavior = 3

@@ -26,7 +26,12 @@ grow_vertical = 2
 color = Color(0.14225578, 0.14225581, 0.14225578, 1)
 
 [node name="TopBar" parent="." unique_id=1610431272 instance=ExtResource("1_n8pl3")]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
 
 [node name="MainContent" type="Control" parent="." unique_id=641832817]
 layout_mode = 1
@@ -94,6 +99,7 @@ offset_bottom = 548.0
 [node name="TitleLabel" parent="MainContent/FeaturedFightersPane" index="0" unique_id=1300521274]
 offset_top = 7.0
 offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.7882353, 0.16470589, 0.16470589, 1)
 text = "FEATURED FIGHTERS"
 
 [node name="Content" parent="MainContent/FeaturedFightersPane" index="1" unique_id=2070081730]
@@ -156,6 +162,7 @@ offset_right = 1820.0
 offset_bottom = 514.0
 
 [node name="TitleLabel" parent="MainContent/UpcomingSchedulePane" index="0" unique_id=1300521274]
+theme_override_colors/font_color = Color(0.7882353, 0.16470589, 0.16470589, 1)
 text = "UPCOMING SCHEDULE"
 
 [node name="Content" parent="MainContent/UpcomingSchedulePane" index="1" unique_id=2070081730]
@@ -193,6 +200,7 @@ offset_right = 598.0
 offset_bottom = 877.0
 
 [node name="TitleLabel" parent="MainContent/RecentNewsPanel" index="0" unique_id=1300521274]
+theme_override_colors/font_color = Color(0.7882353, 0.16470589, 0.16470589, 1)
 text = "RECENT NEWS"
 
 [node name="Content" parent="MainContent/RecentNewsPanel" index="1" unique_id=2070081730]
@@ -266,6 +274,7 @@ offset_right = 1216.0
 offset_bottom = 861.0
 
 [node name="TitleLabel" parent="MainContent/RankingSnapshotPanel" index="0" unique_id=1300521274]
+theme_override_colors/font_color = Color(0.7882353, 0.16470589, 0.16470589, 1)
 text = "RANKING SNAPSHOT"
 
 [node name="Content" parent="MainContent/RankingSnapshotPanel" index="1" unique_id=2070081730]
@@ -302,10 +311,46 @@ offset_top = 609.0
 offset_right = 1832.0
 offset_bottom = 859.0
 
+[node name="TitleLabel" parent="MainContent/FinancePanel" index="0" unique_id=1300521274]
+theme_override_colors/font_color = Color(0.7882353, 0.16470589, 0.16470589, 1)
+text = "FINANCIAL SNAPSHOT"
+
+[node name="Content" parent="MainContent/FinancePanel" index="1" unique_id=2070081730]
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContent/FinancePanel/Content" index="0" unique_id=290683631]
+layout_mode = 2
+
+[node name="FinanceItem" type="Label" parent="MainContent/FinancePanel/Content/VBoxContainer" unique_id=868219038]
+layout_mode = 2
+text = "Bank Balance $487,210"
+
+[node name="FinanceItem2" type="Label" parent="MainContent/FinancePanel/Content/VBoxContainer" unique_id=1232757876]
+layout_mode = 2
+text = "Monthly Expenses: $25,067"
+
+[node name="FinanceItem3" type="Label" parent="MainContent/FinancePanel/Content/VBoxContainer" unique_id=1776350010]
+layout_mode = 2
+text = "Sponsorship Value: $240,000"
+
+[node name="FinanceItem4" type="Label" parent="MainContent/FinancePanel/Content/VBoxContainer" unique_id=1738667580]
+visible = false
+layout_mode = 2
+
 [node name="BottomNavigation" parent="." unique_id=508850874 instance=ExtResource("3_rxei5")]
-layout_mode = 0
-offset_top = 1037.0
-offset_bottom = 1077.0
+custom_minimum_size = Vector2(0, 76)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -50.0
+offset_right = 8.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 0
 
 [editable path="MainContent/CampOverviewPanel/Content2/StatRow/CampRecordStat"]
 [editable path="MainContent/CampOverviewPanel/Content2/StatRow/WinRateStat"]
@@ -321,3 +366,4 @@ offset_bottom = 1077.0
 [editable path="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem2"]
 [editable path="MainContent/RecentNewsPanel/Content/NewsList/NewsListItem3"]
 [editable path="MainContent/RankingSnapshotPanel"]
+[editable path="MainContent/FinancePanel"]

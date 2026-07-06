@@ -1,8 +1,23 @@
 [gd_scene format=3 uid="uid://c3a33wge3alya"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8cwr"]
+bg_color = Color(0.05490196, 0.05490196, 0.05490196, 1)
+border_width_top = 2
+border_color = Color(0.16470589, 0.16470589, 0.16470589, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v85ql"]
+bg_color = Color(0.078431375, 0.078431375, 0.078431375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7j02b"]
+bg_color = Color(0.61960787, 0.105882354, 0.105882354, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7yo7j"]
+bg_color = Color(0.10980392, 0.10980392, 0.10980392, 1)
+
 [node name="BottomNavigation" type="Panel" unique_id=508850874]
 offset_right = 40.0
 offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_o8cwr")
 
 [node name="Margin" type="MarginContainer" parent="." unique_id=1547540500]
 layout_mode = 0
@@ -15,28 +30,49 @@ theme_override_constants/separation = 8
 
 [node name="HomeButton" type="Button" parent="Margin/ButtonRow" unique_id=1667941639]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_v85ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7j02b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7yo7j")
 text = "Home"
 
 [node name="CampButton" type="Button" parent="Margin/ButtonRow" unique_id=1810378660]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_v85ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7j02b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7yo7j")
 text = "Camp"
 
 [node name="FightersButton" type="Button" parent="Margin/ButtonRow" unique_id=1170751252]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_v85ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7j02b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7yo7j")
 text = "Fighters"
 
 [node name="ScheduleButton" type="Button" parent="Margin/ButtonRow" unique_id=242746089]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_v85ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7j02b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7yo7j")
 text = "Schedule"
 
 [node name="RankingsButton" type="Button" parent="Margin/ButtonRow" unique_id=733424120]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_v85ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7j02b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7yo7j")
 text = "Rankings"
 
 [node name="NewsButton" type="Button" parent="Margin/ButtonRow" unique_id=1835305537]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_v85ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7j02b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7yo7j")
 text = "News"
 
 [node name="MoreButton" type="Button" parent="Margin/ButtonRow" unique_id=465517487]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_v85ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7j02b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7yo7j")
 text = "More"

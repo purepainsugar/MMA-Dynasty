@@ -1,8 +1,15 @@
 [gd_scene format=3 uid="uid://cdj1pg16kqbkc"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jxwda"]
+bg_color = Color(0.05490196, 0.05490196, 0.05490196, 1)
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.16470589, 0.16470589, 1)
+
 [node name="TopBar" type="Panel" unique_id=1610431272]
+custom_minimum_size = Vector2(1920, 48)
 offset_right = 40.0
 offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jxwda")
 
 [node name="Margin" type="MarginContainer" parent="." unique_id=1967357124]
 layout_mode = 0
@@ -25,7 +32,12 @@ text = "Week 14, May 2027 | Next: WFC 312"
 layout_mode = 2
 text = "$487,210"
 
+[node name="MessagesLabel" type="Label" parent="Margin/Row" unique_id=429293395]
+layout_mode = 2
+text = "MSG 0"
+
 [node name="MessagesButton" type="Button" parent="Margin/Row" unique_id=1723632603]
+visible = false
 layout_mode = 2
 text = "Messages"
 
